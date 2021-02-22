@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 import { Button, Container, Form } from 'react-bootstrap';
 import { v4 as uuid } from 'uuid';
 
-export function Login({ onIdSubmit }) {
+export function Login ({ onIdSubmit }) {
   const idRef = useRef(null);
 
   function handleSubmit(event: React.FormEvent) {

@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 
 const PREFIX = 'wa-clone-local-';
 
-export function useLocalStorage(key: string, initialValue?: Function | string) {
+export function useLocalStorage(key: string, initialValue?: object) {
   const prefixedKey = PREFIX + key;
   const [value, setValue] = useState(() => {
     const jsonVal = localStorage.getItem(prefixedKey);
