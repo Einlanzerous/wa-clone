@@ -4,6 +4,7 @@ const PREFIX = 'wa-clone-local-';
 
 export function useLocalStorage(key: string, initialValue?: object) {
   const prefixedKey = PREFIX + key;
+  
   const [value, setValue] = useState(() => {
     const jsonVal = localStorage.getItem(prefixedKey);
     console.log(jsonVal);
